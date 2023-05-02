@@ -270,7 +270,7 @@ for i_ang in np.arange(nsteps_ang):
     point_uranus = animate_uranus(i_ang)
     point_neptune = animate_neptune(i_ang)
     the_plot.pyplot(plt)
-    time.sleep(0.0)
+    time.sleep(0.1)
     point_earth.remove()
     point_mercury.remove()
     point_venus.remove()
