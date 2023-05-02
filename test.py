@@ -50,19 +50,11 @@ Distance_neptune = 30.0690  # AU
 
 #image_sun = get_sample_data('/Users/mattianegrello/CHART_OUTREACH/ACTIVITIES/sun.png')
 
-path_sun = '/Users/mattianegrello/CHART_OUTREACH/ACTIVITIES/sun.png'
-path_mercury = '/Users/mattianegrello/CHART_OUTREACH/ACTIVITIES/mercury.png'
-path_venus = '/Users/mattianegrello/CHART_OUTREACH/ACTIVITIES/venus_lowres.png'
-path_earth = '/Users/mattianegrello/CHART_OUTREACH/ACTIVITIES/earth.png'
-path_mars = '/Users/mattianegrello/CHART_OUTREACH/ACTIVITIES/mars.png'
-
-
-image_sun = plt.imread(path_sun)
-image_mercury = plt.imread(path_mercury)
-image_venus = plt.imread(path_venus)
-image_earth = plt.imread(path_earth)
-image_mars = plt.imread(path_mars)
-
+path_sun = 'sun.png'
+path_mercury = 'mercury.png'
+path_venus = 'venus_lowres.png'
+path_earth = 'earth.png'
+path_mars = 'mars.png'
 
 
 
