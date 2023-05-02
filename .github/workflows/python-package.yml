@@ -38,3 +38,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest test
+        
+    - name: Do my own test
+      run: |
+        python test.py
