@@ -213,27 +213,27 @@ ax.add_artist(ab)
 the_plot = st.pyplot(plt)
 
 def animate_earth(i_ang):  
-    #point_earth, = plt.plot(x_earth[i_ang], y_earth[i_ang], 'o', color='Blue')
-    point_earth = AnnotationBbox(OffsetImage(image_earth, zoom=0.024), (x_earth[i_ang], y_earth[i_ang]), frameon=False)
-    ax.add_artist(point_earth)
+    point_earth, = plt.plot(x_earth[i_ang], y_earth[i_ang], 'o', color='Blue')
+    #point_earth = AnnotationBbox(OffsetImage(image_earth, zoom=0.024), (x_earth[i_ang], y_earth[i_ang]), frameon=False)
+    #ax.add_artist(point_earth)
     return point_earth
 
 def animate_mercury(i_ang):  
-    #point_mercury, = plt.plot(x_mercury[i_ang], y_mercury[i_ang], 'o', color='Grey')
-    point_mercury = AnnotationBbox(OffsetImage(image_mercury, zoom=0.02), (x_mercury[i_ang], y_mercury[i_ang]), frameon=False)
-    ax.add_artist(point_mercury)
+    point_mercury, = plt.plot(x_mercury[i_ang], y_mercury[i_ang], 'o', color='Grey')
+    #point_mercury = AnnotationBbox(OffsetImage(image_mercury, zoom=0.02), (x_mercury[i_ang], y_mercury[i_ang]), frameon=False)
+    #ax.add_artist(point_mercury)
     return point_mercury
 
 def animate_venus(i_ang):  
-    #point_venus, = plt.plot(x_venus[i_ang], y_venus[i_ang], 'o', color='Cyan')
-    point_venus = AnnotationBbox(OffsetImage(image_venus, zoom=0.021), (x_venus[i_ang], y_venus[i_ang]), frameon=False)
-    ax.add_artist(point_venus)
+    point_venus, = plt.plot(x_venus[i_ang], y_venus[i_ang], 'o', color='Cyan')
+    #point_venus = AnnotationBbox(OffsetImage(image_venus, zoom=0.021), (x_venus[i_ang], y_venus[i_ang]), frameon=False)
+    #ax.add_artist(point_venus)
     return point_venus
 
 def animate_mars(i_ang):  
-    #point_mars, = plt.plot(x_mars[i_ang], y_mars[i_ang], 'o', color='Red')
-    point_mars = AnnotationBbox(OffsetImage(image_mars, zoom=0.03), (x_mars[i_ang], y_mars[i_ang]), frameon=False)
-    ax.add_artist(point_mars)
+    point_mars, = plt.plot(x_mars[i_ang], y_mars[i_ang], 'o', color='Red')
+    #point_mars = AnnotationBbox(OffsetImage(image_mars, zoom=0.03), (x_mars[i_ang], y_mars[i_ang]), frameon=False)
+    #ax.add_artist(point_mars)
     return point_mars
 
 def animate_jupiter(i_ang):  
@@ -270,15 +270,15 @@ for i_ang in np.arange(nsteps_ang):
     point_uranus = animate_uranus(i_ang)
     point_neptune = animate_neptune(i_ang)
     the_plot.pyplot(plt)
-    time.sleep(0.1)
-    point_earth.remove()
-    point_mercury.remove()
-    point_venus.remove()
-    point_mars.remove()
-    point_jupiter.remove()
-    point_saturn.remove()
-    point_uranus.remove()
-    point_neptune.remove()    
+    time.sleep(0.0)
+    #point_earth.remove()
+    #point_mercury.remove()
+    #point_venus.remove()
+    #point_mars.remove()
+    #point_jupiter.remove()
+    #point_saturn.remove()
+    #point_uranus.remove()
+    #point_neptune.remove()    
     
     
     
