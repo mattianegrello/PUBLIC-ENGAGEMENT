@@ -1,8 +1,8 @@
 import numpy as np
 import streamlit as st
 import matplotlib.pyplot as plt
-import mpld3
-import streamlit.components.v1 as components
+#import mpld3
+#import streamlit.components.v1 as components
 import time
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from matplotlib.cbook import get_sample_data
