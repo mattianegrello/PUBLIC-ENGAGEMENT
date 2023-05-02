@@ -210,7 +210,7 @@ plt.plot(x_mars, y_mars, '-', color='Red', lw=0.5, alpha=0.3)
 ab = AnnotationBbox(OffsetImage(image_sun, zoom=0.06), (x_sun, y_sun), frameon=False)
 ax.add_artist(ab)
 
-the_plot = st.pyplot(plt)
+#the_plot = st.pyplot(plt)
 
 def animate_earth(i_ang):  
     point_earth, = plt.plot(x_earth[i_ang], y_earth[i_ang], 'o', color='Blue')
@@ -280,5 +280,6 @@ for i_ang in np.arange(nsteps_ang):
     #point_uranus.remove()
     #point_neptune.remove()    
     
-    
+st.pyplot(fig)
+
     
