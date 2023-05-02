@@ -280,6 +280,6 @@ for i_ang in np.arange(nsteps_ang):
     #point_uranus.remove()
     #point_neptune.remove()    
     
-st.pyplot(fig)
+    st.pyplot(fig)
 
     
