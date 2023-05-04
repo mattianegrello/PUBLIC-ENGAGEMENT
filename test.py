@@ -2,7 +2,7 @@
 import os
 import numpy as np
 import streamlit as st
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 #from scipy.interpolate import interp1d
 import scipy
 import time
