@@ -168,7 +168,7 @@ col1, col2, col3, col4, col5 = st.columns((0.5,1,0.5,1,1))
 #
 col1.write('Planet')
 #col2.write('Distance'+'<p style="font-size:26px; color:red;">(in billion km)</p>', unsafe_allow_html=True)
-col2.write('Distance <p style="font-size:15px; padding: 10px 5px;">(in billion km)</p>', unsafe_allow_html=True)
+col2.write('Distance <p style="font-size:15px; padding: 1px 1px;">(in billion km)</p>', unsafe_allow_html=True)
 col3.write('Distance <p style="font-size:15px">(in AU)</p>', unsafe_allow_html=True)
 col4.write('Period <p style="font-size:15px">(in Earth days)</p>', unsafe_allow_html=True)
 col5.write('Period <p style="font-size:15px">(in Earth years)</p>', unsafe_allow_html=True)
