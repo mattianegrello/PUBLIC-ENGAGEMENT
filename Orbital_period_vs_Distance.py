@@ -167,9 +167,9 @@ st.write(' ')
 col1, col2, col3, col4, col5 = st.columns((0.5,1,0.5,1,1))
 #
 col1.write('Planet')
-col2.write('''Distance
-           (in billion km)
-           ''')
+col2.write('''
+Distance 
+(in billion km)''')
 col3.write('Distance (in AU)')
 col4.write('Period (in Earth days)')
 col5.write('Period (in Earth years)')
