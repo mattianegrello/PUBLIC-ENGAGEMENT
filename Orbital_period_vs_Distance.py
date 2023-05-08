@@ -92,7 +92,7 @@ with st.sidebar:
     col2.write('')
     col2.write('')
     col2.write('')
-    P_earth = col2.number_input('$P_{Earth}$', format='%0.1f', step=0.1, label_visibility='collapsed', min_value=earth('P_Edays'))
+    P_earth = col2.number_input('$P_{Earth}$', format='%0.1f', step=0.1, label_visibility='collapsed', value=earth['P_Edays'])
 
     st.write('')
     
