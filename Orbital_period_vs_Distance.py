@@ -164,19 +164,13 @@ st.write(' ')
 # =========================================
 # Table summarizing the info on the planets
 # =========================================
-col1, col2, col3, col4, col5 = st.columns((1,1,1,1,1))
+col1, col2, col3, col4, col5 = st.columns((0.5,1,1,1,1))
 #
 col1.write('Planet')
-col2.write('Distance')
-col3.write('Distance')
-col4.write('Period')
-col5.write('Period')
-#
-col1.write('')
-col2.write('(in billion km)')
-col3.write('(in AU)')
-col4.write('(in Earth days)')
-col5.write('(in Earth years)')
+col2.write('Distance (in billion km)')
+col3.write('Distance (in AU)')
+col4.write('Period (in Earth days)')
+col5.write('Period (in Earth years)')
 #
 col1.write('Mercury')
 col2.write(mercury['D_km']/10.0**9.0, format='%0.001f')
