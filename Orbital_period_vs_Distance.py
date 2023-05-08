@@ -47,9 +47,6 @@ uranus = {'D_km':planet_D_km[6], 'P_Edays':planet_P_Edays[6], 'D_AU':planet_D_km
 neptune =  {'D_km':planet_D_km[7], 'P_Edays':planet_P_Edays[7], 'D_AU':planet_D_km[7]/planet_D_km[2]}
 
 
-print(mercury['D_AU'])
-
-
 # ========================================
 # Create a sidebar where to input the data
 # ========================================
@@ -167,52 +164,61 @@ st.write(' ')
 # =========================================
 # Table summarizing the info on the planets
 # =========================================
-col1, col2, col3, col4 = st.columns((1,1,1,1))
+col1, col2, col3, col4, col5 = st.columns((1,1,1,1))
 #
 col1.write('Planet')
 col2.write('Distance (in billion km)')
 col3.write('Distance (in AU)')
 col4.write('Period (in Earth days)')
+col5.write('Period (in Earth years)')
 #
 col1.write('Mercury')
 col2.write(mercury['D_km']/10.0**9.0, format='%0.001f')
 col3.write(mercury['D_AU'])
 col4.write(P_mercury)
+col5.write(P_mercury/P_earth)
 #
 col1.write('Venus')
 col2.write(venus['D_km']/10.0**9.0, format='%0.001f')
 col3.write(venus['D_AU'])
 col4.write(P_venus)
+col5.write(P_venus/P_earth)
 #
 col1.write('Earth')
 col2.write(earth['D_km']/10.0**9.0, format='%0.001f')
 col3.write(earth['D_AU'])
 col4.write(P_earth)
+col5.write(P_earth/P_earth)
 #
 col1.write('Mars')
 col2.write(mars['D_km']/10.0**9.0, format='%0.001f')
 col3.write(mars['D_AU'])
 col4.write(P_mars)
+col5.write(P_mars/P_earth)
 #
 col1.write('Jupiter')
 col2.write(jupiter['D_km']/10.0**9.0, format='%0.001f')
 col3.write(jupiter['D_AU'])
 col4.write(P_jupiter)
+col5.write(P_jupiter/P_earth)
 #
 col1.write('Saturn')
 col2.write(saturn['D_km']/10.0**9.0, format='%0.001f')
 col3.write(saturn['D_AU'])
 col4.write(P_saturn)
+col5.write(P_saturn/P_earth)
 #
 col1.write('Uranus')
 col2.write(uranus['D_km']/10.0**9.0, format='%0.001f')
 col3.write(uranus['D_AU'])
 col4.write(P_uranus)
+col5.write(P_uranus/P_earth)
 #
 col1.write('Neptune')
 col2.write(neptune['D_km']/10.0**9.0, format='%0.001f')
 col3.write(neptune['D_AU'])
 col4.write(P_neptune)
+col5.write(P_neptune/P_earth)
 
 
 st.write(' ')
