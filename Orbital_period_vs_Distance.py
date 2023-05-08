@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from matplotlib.cbook import get_sample_data
 from astropy.io import ascii
-import mpld3
 import time
 
 # -------------------------
