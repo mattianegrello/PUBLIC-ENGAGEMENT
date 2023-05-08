@@ -173,6 +173,8 @@ col3.write('Distance (in AU)')
 col4.write('Period (in Earth days)')
 col5.write('Period (in Earth years)')
 #
+col1, col2, col3, col4, col5 = st.columns((0.5,1,0.5,1,1))
+#
 col1.write('Mercury')
 col2.write(mercury['D_km']/10.0**9.0, format='%0.001f')
 col3.write(mercury['D_AU'])
