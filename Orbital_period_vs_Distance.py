@@ -15,7 +15,8 @@ import time
 # -------------------------
 # Set-up page configuration
 # -------------------------
-st.set_page_config(layout='centered')    
+#st.set_page_config(layout='centered') 
+st.set_page_config(layout='wide')   
     
 # ---------------------
 # Images of the planets
