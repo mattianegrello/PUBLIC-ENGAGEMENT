@@ -338,7 +338,7 @@ st.pyplot(fig)
 
 
 
-
+st.write('')
 
 
 
@@ -433,25 +433,6 @@ plt.plot([x,x], [0.0001,y], '--', color='Black', lw='0.5', alpha=0.5)
 plt.plot([0.00001,x], [y,y], '--', color='Black', lw='0.5', alpha=0.5)
 point_neptune = AnnotationBbox(OffsetImage(image_neptune, zoom=0.025), (x,y), frameon=False)
 ax.add_artist(point_neptune)
-
-
-# -------------------------------
-# BUTTON to show kepler third law
-# -------------------------------
-if st.button('Press button to Diplay Kepler third law'):
-    M_sun = 1.989*10.0**30.0  # kg
-    G_grav = 6.6743*10.0**(-11.0)  # m^3 kg^-1 s^-2
-    G_grav = G_grav * 10.0**(-9.0) * (1.15741*10.0**(-5.0))**(-2.0)             # km^3 kg^-1 day^-2
-    D_bkm = 10.0**np.linspace(-3.0,3.0,100)   # bilion km
-    P_days = np.sqrt(4.0*np.pi**2.0/G_grav/M_sun*(D_bkm*10.0**9.0)**3.0)  # 
-    plt.plot(D_bkm, P_days, '-', color='Red', lw='0.5', alpha=0.5)
-
-# -------------------
-# BUTTON to show grid
-# -------------------
-if st.button('Press button to show grid'):
-    plt.grid(which='minor', ls=':', lw=0.5)
-    plt.grid(which='major', lw=0.5)
     
 st.pyplot(fig)
 
