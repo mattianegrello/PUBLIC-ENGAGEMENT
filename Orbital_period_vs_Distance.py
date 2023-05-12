@@ -737,8 +737,8 @@ with st.expander(label_expander):
     
     st.markdown('Immagine that a distant star has two planets orbiting around it, as illustrated in the picture below. **Planet 1** is located very close to the star while **Planet 2** is far away from the star. Which of the two planets is more likely to transit in front of the star while you are observing that system and why? Select the correct answer below.')
 
-    image = plt.imread('images/Planet_1_and_Planet_2.png.png')
-    st.image(image)
+    image_2planets = plt.imread('images/Planet_1_and_Planet_2.png.png')
+    st.image(image_2planets)
     st.write('')
 
     answer_1 = 'Planet 1 is more likely to be seen transiting in front of the star'
