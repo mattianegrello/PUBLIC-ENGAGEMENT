@@ -213,7 +213,7 @@ st.write(' ')
 st.markdown('**DEFINITIONS**:')
 st.markdown('- The **ORBIT** of a planet around the Sun is the repeating path in space taken by the planet around the Sun. It can be approximated with a **circle**; therefore, the radius of the orbit of a planet correspond to the distance of the planet from the Sun. The distance of the Earth from the Sun is referred to as an **Astronomical Unit (AU)** and measures about **150 million km**. The sidebar on the left shows the distance of each planet from the Sun in units of million km. Can you work out the distance of the planets in AU?')
 
-image_orbit = plt.imread('images/orbit.png')
+image_orbit = plt.imread('images/Orbit.png')
 st.image(image_orbit)
 
 st.write('')
