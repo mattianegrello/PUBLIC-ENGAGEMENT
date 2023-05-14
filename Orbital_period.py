@@ -213,7 +213,8 @@ st.write(' ')
 st.markdown('**DEFINITIONS**:')
 st.markdown('- The **ORBIT** of a planet around the Sun is the repeating path in space taken by the planet around the Sun. It can be approximated with a **circle**; therefore, the radius of the orbit of a planet correspond to the distance of the planet from the Sun. The distance of the Earth from the Sun is referred to as an **Astronomical Unit (AU)** and measures about **150 million km**. The sidebar on the left shows the distance of each planet from the Sun in units of million km. Can you work out the distance of the planets in AU?')
 
-st.image('IMAGES/orbit.png')
+image_orbit = plt.imread('images/orbit.png')
+st.image(image_orbit)
 
 st.write('')
 st.markdown('- The **ORBITAL PERIOD** of a planet is the time it takes the planet to complete an orbit around the Sun. For the Earth this corresponds to 365.3 days (or 1 year). Hereafter, we will refer to the orbital period of the Earth as 1 **Earth year**. In fact, as you will see, the concept of year (as well as the concept of day) is planet-dependent, because different planets have different orbital periods.')
